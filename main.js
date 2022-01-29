@@ -31,9 +31,10 @@ function gotResults(error, results){
         console.log(results);
     }
 }
-
-var prediction = "Happy";
+    function speak(){
     var  synth = window.speechSynthesis;
     speak_data = "I Guess The Prediction Of Your Hand Gesture is" + prediction;
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
+    }
+
